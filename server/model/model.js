@@ -3,18 +3,18 @@ const mongoose = require("mongoose");
 var schema = new mongoose.Schema({
   firstName: {
     type: String,
-    require: true,
+    required: true,
   },
   lastName: {
     type: String,
-    require: true,
+    required: true,
   },
   birthDay: {
-    type: String,
-    require: true,
+    type: Date,
+    required: true,
   },
   Age: {
-    type: Number,
+    type: String,
   },
 });
 
